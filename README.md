@@ -134,7 +134,8 @@ In this graph, the nodes correspond to object bounding boxes with their category
 | [ASPIRe](https://uark-cviu.github.io/ASPIRe/) | Video(Interlacements) | - | - | 4.5K | - | 1.5K |
 | [Ego-EASG](https://github.com/fpv-iplab/EASG) | Video(Ego-view) | 407 | - | 235 | - | - |
 |[SportsHHI](https://github.com/MCG-NJU/SportsHHI) | Video(sports) | - | - | - | - | 160 |
-| [VSGR](https://uark-cviu.github.io/projects/HyperGLM/) |Video(Procedural) | - | - | - | - | 3,748 | 
+| [VSGR](https://uark-cviu.github.io/projects/HyperGLM/) | Video(Procedural) | - | - | - | - | 3,748 | 
+| [T-STAR](https://arxiv.org/pdf/2607.21228) | Video(Satellite) | 30 | - | 70 | 3,832,449 | 150 | 
 | [3D Semantic Scene Graphs (3DSSG)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wald_Learning_3D_Semantic_Scene_Graphs_From_3D_Indoor_Reconstructions_CVPR_2020_paper.pdf) | 3D | 528 | - | 39 | - | 48K|
 | [PSG4D](https://arxiv.org/pdf/2405.10305) | 4D | 46 | - | 15 | - | - | - |
 | [4D-OR](https://github.com/egeozsoy/4D-OR) | 4D(operating room) | 12 | - | 14 | - | - |
@@ -347,6 +348,8 @@ There are three subtasks:
 
 
 ### Non-LLM-based
+
++ [**Revisiting Scene Graph Generation from the Perspective of Detector-Conditioned Reachability**](https://arxiv.org/pdf/2607.06176) [![Paper](https://img.shields.io/badge/ECCV26-1e90ff)]() 
 
 + [**Learning Context-Conditioned Predicate Semantics via Prototype Feedback**](https://arxiv.org/pdf/2605.29610) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]()  [![Star](https://img.shields.io/github/stars/Namgyu97/AlignG-SGG.pytorch.svg?style=social&label=Star)](https://github.com/Namgyu97/AlignG-SGG.pytorch)
 
@@ -570,6 +573,9 @@ There are three subtasks:
 
 Compared with traditional scene graph, each object is grounded by `a panoptic segmentation mask` in PSG, achieving a compresensive structured scene representation.
 
+
++ [**T-STAR: A Large-Scale Benchmark for Spatio-Temporal Panoptic Scene Graph Generation in Satellite Video**](https://arxiv.org/pdf/2607.21228) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]()  [![Star](https://img.shields.io/github/stars/linlin-dev/T-STAR.svg?style=social&label=Star)](https://github.com/linlin-dev/T-STAR)
+
 + [**DSFlash: Comprehensive Panoptic Scene Graph Generation in Realtime**](https://arxiv.org/pdf/2603.10538) [![Paper](https://img.shields.io/badge/CVPR26-8A2BE2)]()
 
 + [**SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning**](https://arxiv.org/pdf/2507.05798) [![Paper](https://img.shields.io/badge/ICCV25-00CED1)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://8078qwe.github.io/SPADE/)
@@ -752,10 +758,23 @@ Spatio-Temporal (Video) Scene Graph Generation, a.k.a, dynamic scene graph gener
 Given a 3D point cloud $P \in R^{N×3}$ consisting of $N$ points, we assume there is a set of class-agnostic instance masks $M = \{M_1, ..., M_K\}$ corresponding to $K$ entities in $P$, `3D Scene Graph Generation` aims to map the input 3D point cloud to a reliable semantically structured scene graph $G = \{O, R\}$. 
 Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 
+
++ [**3D Scene Graph Prediction: Generating Hierarchical Models from Partially Observed Environments**](https://arxiv.org/pdf/2607.10879) [![Paper](https://img.shields.io/badge/IROS26-b22222)]()
+  <details><summary>Consider the case where a robot has explored part of an environment and needs to predict the unexplored parts to support downstream tasks such as exploration or object search.</summary> We propose a top-down framework for synthesizing hierarchical 3D scene graphs, including a room layer -- describing the floor plan and traversability -- and an object layer modeling object layouts within each room. For the room layer, we propose a novel mixed-domain graph diffusion model jointly predicting room categories, floor boundaries, and traversability between rooms. Via corruption and masking, this model supports partial constraints such as incomplete floor plans, avoiding the need for partially observed training data. For the object layer, we integrate an existing mixed discrete-continuous diffusion model for joint prediction of object categories, locations, sizes, and orientations within each room given the floor plan.</details>
+
++ [**DeWorldSG: Depth-Aware 3D Semantic Scene Graph Generation via World-Model Priors**](https://arxiv.org/pdf/2607.00889)  [![Paper](https://img.shields.io/badge/ECCV26-1e90ff)]()  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://deworldsg2026.github.io/)
+
++ [**NoPA: Non-Parametric Online 3D Scene Graph Generation**](https://arxiv.org/pdf/2607.00529) [![Paper](https://img.shields.io/badge/ECCV26-1e90ff)]()
+
++ [**PUF: Plug-and-Play Uncertainty-Aware Fusion for Online 3D Scene Graph Generation**](https://arxiv.org/pdf/2607.07170) [![Paper](https://img.shields.io/badge/ECCV26-1e90ff)]() [![Star](https://img.shields.io/github/stars/yyyyangyi/PUF.svg?style=social&label=Star)](https://github.com/yyyyangyi/PUF)
+  <details><summary>Online 3D scene graph generation builds a persistent, structured representation of a scene by incrementally fusing 2D observations into a global 3D graph.<summary></details> 
+
 + [**OP3DSG: Open-Vocabulary Part-Aware 3D Scene Graph Generation for Real-World Environments**](https://arxiv.org/pdf/2606.29786) [![Paper](https://img.shields.io/badge/ECCV26-1e90ff)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://k2room.github.io/OP3DSG/)
 
 + [**KeySG: Hierarchical Keyframe-Based 3D Scene Graphs**](https://arxiv.org/abs/2510.01049) [![Paper](https://img.shields.io/badge/ICRA26-8A2BE2)]()  [![Star](https://img.shields.io/github/stars/keysg-lab/KeySG.svg?style=social&label=Star)](https://github.com/keysg-lab/KeySG)
 
+
++ [**From Scene-Centric to Observer-Centric: Modeling Observer-Aware Relations for 3D Scene Graph Generation**](https://arxiv.org/pdf/2606.27412v2) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]()
 
 + [**MA3DSG: Multi-Agent 3D Scene Graph Generation for Large-Scale Indoor Environments**](https://arxiv.org/pdf/2602.04152) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]()
 
@@ -998,6 +1017,11 @@ Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 
 
 ## Video Generation
+
++ [**GraphVid: Interactive Graph-Controllable Video Generation**](https://arxiv.org/pdf/2607.21580) [![Paper](https://img.shields.io/badge/ECCV26-1e90ff)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://plan-lab.github.io/projects/graphvid/)
+
++ [**SGA: Plug&Play Geometric Verification for Educational Video Synthesis**](https://arxiv.org/pdf/2607.18116) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]()
+
 + [**LINA: Learning INterventions Adaptively for Physical Alignment and Generalization in Diffusion Models**](https://arxiv.org/pdf/2512.13290)  [![Paper](https://img.shields.io/badge/arXiv25-b22222)]() [![Star](https://img.shields.io/github/stars/OpenCausaLab/LINA.svg?style=social&label=Star)](https://github.com/OpenCausaLab/LINA) [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://opencausalab.github.io/LINA/)
   <details><summary>Causal Scene Graph (CSG)</summary>Introduce a representation that unifies causal dependencies and spatial layouts, providing a basis for diagnostic interventions.</details>
 
@@ -1105,6 +1129,8 @@ textual features from vision-language models to visual conceptual understanding.
 
 
 ## 3D Scene Generation
+
++ [**CinemaTraj: Composing Atomic Camera Trajectories for 3D Scenes with LLM Agents**](https://arxiv.org/pdf/2607.26910) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://cinematraj.github.io/)
 
 + [**Graph-GSReg: Leveraging 3D Scene Graphs for Gaussian Splatting Registration**](https://arxiv.org/pdf/2606.29782) [![Paper](https://img.shields.io/badge/ECCV26-b1e90ff)]() [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://lee-jaewon.github.io/Graph-GSReg/)
 
