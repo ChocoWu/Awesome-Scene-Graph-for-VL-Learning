@@ -780,6 +780,8 @@ Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 
 + [**VIZOR: Viewpoint-Invariant Zero-Shot Scene Graph Generation for 3D Scene Reasoning**](https://openaccess.thecvf.com/content/WACV2026/papers/Madhavaram_VIZOR_Viewpoint-Invariant_Zero-Shot_Scene_Graph_Generation_for_3D_Scene_Reasoning_WACV_2026_paper.pdf) [![Paper](https://img.shields.io/badge/WACV25-6a5acd)]() 
 
++ [**ArtiSG: Functional 3D Scene Graph Construction via Human-demonstrated Articulated Objects Manipulation**](https://arxiv.org/pdf/2512.24845) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]()
+
 + [**Object-Centric Representation Learning for Enhanced 3D Scene Graph Prediction**](https://arxiv.org/pdf/2510.04714) [![Paper](https://img.shields.io/badge/NIPS25-CD5C5C2)]() [![Star](https://img.shields.io/github/stars/VisualScienceLab-KHU/OCRL-3DSSG-Codes.svg?style=social&label=Star)](https://github.com/VisualScienceLab-KHU/OCRL-3DSSG-Codes)
 
 + [**Social 3D Scene Graphs: Modeling Human Actions and Relations for Interactive Service Robots**](https://arxiv.org/pdf/2509.24966v1) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]()
@@ -808,6 +810,8 @@ Compared with 2D scene graph Generation, the input of 3D SGG is point cloud.
 + [**GaussianGraph: 3D Gaussian-based Scene Graph Generation for Open-world Scene Understanding**](https://arxiv.org/pdf/2503.04034) [![Paper](https://img.shields.io/badge/IROS2025-b22222)]() [![Star](https://img.shields.io/github/stars/WangXihan-bit/GaussianGraph.svg?style=social&label=Star)](https://github.com/WangXihan-bit/GaussianGraph)  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://wangxihan-bit.github.io/GaussianGraph/)
 
 + [**DynamicGSG: Dynamic 3D Gaussian Scene Graphs for Environment Adaptation**](https://arxiv.org/pdf/2502.15309) [![Paper](https://img.shields.io/badge/arXiv25-b22222)]() [![Star](https://img.shields.io/github/stars/GeLuzhou/Dynamic-GSG.svg?style=social&label=Star)](https://github.com/GeLuzhou/Dynamic-GSG)
+
++ [**MR-COGraphs: Communication-Efficient Multi-Robot Open-Vocabulary Mapping System via 3D Scene Graphs**](https://arxiv.org/pdf/2412.18381) [![Paper](https://img.shields.io/badge/RA--L25-b22222)](https://ieeexplore.ieee.org/document/10966246) [![Star](https://img.shields.io/github/stars/efc-robot/MR-COGraphs.svg?style=social&label=Star)](https://github.com/efc-robot/MR-COGraphs)
 
 + [**ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning**](https://arxiv.org/pdf/2309.16650) [![Paper](https://img.shields.io/badge/arXiv24-b22222)]() [![Star](https://img.shields.io/github/stars/concept-graphs/concept-graphs.svg?style=social&label=Star)](https://github.com/concept-graphs/concept-graphs)  [![Project_Page](https://img.shields.io/badge/Project_Page-00CED1)](https://concept-graphs.github.io/)
 
