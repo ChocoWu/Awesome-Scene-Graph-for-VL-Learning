@@ -1463,4 +1463,4 @@ a scene and accommodate them with proper places.</details>
 
 # ⭐️ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ChocoWu/Awesome-Scene-Graph-for-VL-Learning&type=Date)](https://star-history.com/#ChocoWu/Awesome-Scene-Graph-for-VL-Learning&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=ChocoWu/Awesome-Scene-Graph-Generation)](https://star-history.dera.page/#ChocoWu/Awesome-Scene-Graph-Generation)
