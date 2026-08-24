@@ -636,6 +636,7 @@ Spatio-Temporal (Video) Scene Graph Generation, a.k.a, dynamic scene graph gener
 ### LLM-based 
 
 + [**SceneGraphVLM: Dynamic Scene Graph Generation from Video with Vision-Language Models**](https://arxiv.org/pdf/2605.13667) [![Paper](https://img.shields.io/badge/arXiv26-b22222)]()  [![Star](https://img.shields.io/github/stars/markus0440/SceneGraphVLM.svg?style=social&label=Star)](https://github.com/markus0440/SceneGraphVLM)
+  <details><summary>R1-based method</summary>SceneGraphVLM serializes graphs in a token-efficient TOON format and trains the model in two stages: supervised fine-tuning followed by reinforcement learning with hallucination-aware rewards that balance relation coverage and precision while penalizing unsupported objects and relations. For videos, the model can optionally condition each frame on the previously generated graph, providing lightweight short-term context without tracking or post-processing.</details>
 
 + [**ESCA: Contextualizing Embodied Agents via Scene-Graph Generation**](https://arxiv.org/pdf/2510.15963) [![Paper](https://img.shields.io/badge/NIPS25-CD5C5C2)]() [![Star](https://img.shields.io/github/stars/video-fm/ESCA.svg?style=social&label=Star)](https://github.com/video-fm/ESCA)
 
